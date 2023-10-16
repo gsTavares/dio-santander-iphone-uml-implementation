@@ -32,6 +32,8 @@ public class App {
             new InternetBrowser()
         );
 
+        iphone.turnOn();
+
         iphone.getIpod().selectSong(songs.get(0));
         iphone.getIpod().play();
         iphone.getIpod().pause();
@@ -43,5 +45,8 @@ public class App {
         iphone.getSafari().addNewTab(new Tab(0, new Page("Google", "www.google.com")));
         iphone.getSafari().showPage(0);
         iphone.getSafari().refreshPage(0);
+
+        iphone.reset();
+        iphone.turnOff();
     }
 }

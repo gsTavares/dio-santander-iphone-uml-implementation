@@ -53,6 +53,16 @@ public class Iphone {
         this.safari = safari;
     }
 
-    
+    public void turnOn() {
+        System.out.println("Starting iphone device...");
+    }
+
+    public void turnOff() {
+        System.out.println("Shutting down iphone device...");
+    }
+
+    public void reset() {
+        System.out.println("Restarting iphone device...");
+    }
 
 }
